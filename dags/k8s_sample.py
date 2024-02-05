@@ -22,7 +22,7 @@ with DAG(
     run_python = KubernetesPodOperator(
         task_id="run_python_script",
         name="run_python_script",
-        namespace="default",
+        namespace="airflow",
         image="python:3.10-slim",  # 이 이미지에 필요한 파이썬 스크립트와 의존성이 포함되어 있어야 합니다.
         is_delete_operator_pod=True,
         cmds=["python", "-c"],
