@@ -15,7 +15,7 @@ resources = k8s.V1ResourceRequirements(
 with DAG(
     "example_kubernetes_python",
     schedule_interval=None,
-    start_date=datetime.datetime(2020, 2, 2),
+    start_date=datetime.datetime(2024, 2, 5),
     tags=["example"],
 ) as dag:
 
